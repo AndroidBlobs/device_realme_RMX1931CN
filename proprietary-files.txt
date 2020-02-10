@@ -144,6 +144,8 @@ vendor/etc/acdbdata/QRD/QRD_workspaceFile.qwsp
 # Audio-Hardware
 vendor/lib/hw/audio.primary.default.so
 vendor/lib/hw/audio.primary.msmnile.so
+vendor/lib/hw/audio.r_submix.default.so
+vendor/lib/hw/audio.usb.default.so
 vendor/lib/libtinycompress_vendor.so
 vendor/lib/soundfx/libqcompostprocbundle.so
 vendor/lib/soundfx/libqcomvisualizer.so
@@ -151,6 +153,8 @@ vendor/lib/soundfx/libqcomvoiceprocessing.so
 vendor/lib/soundfx/libvolumelistener.so
 vendor/lib64/hw/audio.primary.default.so
 vendor/lib64/hw/audio.primary.msmnile.so
+vendor/lib64/hw/audio.r_submix.default.so
+vendor/lib64/hw/audio.usb.default.so
 vendor/lib64/libtinycompress_vendor.so
 vendor/lib64/soundfx/libqcompostprocbundle.so
 vendor/lib64/soundfx/libqcomvisualizer.so
@@ -386,6 +390,7 @@ vendor/lib/hw/com.qti.chi.override.so
 vendor/lib/libbase64.so
 vendor/lib/libc++_shared.so
 vendor/lib/libcamera_nn_stub.so
+vendor/lib/libcamhidlsensor.so
 vendor/lib/libcamxfdalgov7.so
 vendor/lib/libcamxfdalgov8.so
 vendor/lib/libcamxfdengine.so
@@ -521,6 +526,8 @@ vendor/lib64/libcapiv2svacnn.so
 vendor/lib64/libcapiv2vop.so
 vendor/lib64/libcom.qti.chinodeutils.so
 vendor/lib64/libcvface_api.so
+vendor/lib64/libhdrdynamic.so
+vendor/lib64/libhdrdynamicootf.so
 vendor/lib64/libmegface.so
 vendor/lib64/libMegviiHumBokeh.so
 vendor/lib64/libMegviiHumBokehPost.so
@@ -2170,14 +2177,18 @@ vendor/lib/vendor.qti.hardware.tui_comm@1.0.so
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 
 # Thermal
+vendor/bin/hw/android.hardware.thermal@1.0-service
 vendor/bin/thermal-engine
+vendor/etc/init/android.hardware.thermal@1.0-service.rc
 vendor/etc/thermal-engine.conf
+vendor/lib/hw/android.hardware.thermal@1.0-impl.so
+vendor/lib/hw/thermal.msmnile.so
 -vendor/lib/libthermalclient.so
+vendor/lib64/hw/android.hardware.thermal@1.0-impl.so
+vendor/lib64/hw/thermal.msmnile.so
 -vendor/lib64/libthermalclient.so
 
 # Thermal-Hardware
-vendor/lib/hw/thermal.msmnile.so
-vendor/lib64/hw/thermal.msmnile.so
 
 # Time
 -vendor/app/TimeService/TimeService.apk
@@ -2363,7 +2374,6 @@ vendor/lib/libalipay_factory.so
 vendor/lib/libavcodec_vendor.so
 vendor/lib/libavformat_vendor.so
 vendor/lib/libavutil_vendor.so
-vendor/lib/libcamhidlsensor.so
 vendor/lib/libcert_parse.wpa_s.so
 vendor/lib/libchrome.so
 vendor/lib/libdapparamstorage.so
